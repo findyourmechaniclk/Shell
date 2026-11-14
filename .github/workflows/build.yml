@@ -18,13 +18,13 @@ jobs:
         # configuration: [debug, release]
         configuration: [release]
         platform: [x64, x86, arm64]
-      fail-fast: false
+      fail-fast: true
 
     env:
       SOLUTION_FILE_PATH: src/Shell.sln
       BUILD_CONFIGURATION: ${{matrix.configuration}}
       BUILD_PLATFORM: ${{matrix.platform}}
-      BIN_PATH: D:\a\Shell\Shell\src\bin
+      BIN_PATH: D:\\a\\Shell\\Shell\\src\\bin
     runs-on: windows-latest
 
     steps:
